@@ -8,7 +8,7 @@
     <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:DataSourceStep">
       <con:dataSource type="Data Generator">
         <con:configuration>
-          <generatedDataCount>10</generatedDataCount>
+          <generatedDataCount>12</generatedDataCount>
           <generatorsTotalNumber>1</generatorsTotalNumber>
           <lastSelectedProperty>-1</lastSelectedProperty>
           <GeneratorType0>INT</GeneratorType0>

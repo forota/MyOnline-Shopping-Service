@@ -70,7 +70,7 @@
   <con:properties>
     <con:property>
       <con:name>token_admin</con:name>
-      <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyLGFkbWluQGVtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlzcyI6ImNvbS5taWNyb2NvbXBhbnkiLCJpYXQiOjE3MzE0MDYwMzgsImV4cCI6MTczMTQ5MjQzOH0.GEVLQUiFUd9ZzJehtSn-EykkdsZDz_r_SZjVWg1qqjujT-ytbV9W209oSgca4A9sbRpX0CGqE9ZzCy7acBQjRQ</con:value>
+      <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyLGFkbWluQGVtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlzcyI6ImNvbS5taWNyb2NvbXBhbnkiLCJpYXQiOjE3MzE1NzM0MTgsImV4cCI6MTczMTY1OTgxOH0.LTSPCmQBG7h9X1bHzYfw-p8p5wAr-EKXRHQmg9Ch9FoXinsCMNc9QgIxwlKE9xn7pbw4bnK80QI97HGICBqvtw</con:value>
     </con:property>
   </con:properties>
   <con:reportParameters/>

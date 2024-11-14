@@ -51,7 +51,7 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="transfer" name="actualizar Prop Token" id="193e2e88-9bf1-45cb-a3ed-d5269a8baee2">
+  <con:testStep type="transfer" name="actualizar Propiedad Token" id="193e2e88-9bf1-45cb-a3ed-d5269a8baee2">
     <con:settings/>
     <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertyTransfersStep">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
@@ -70,7 +70,7 @@
   <con:properties>
     <con:property>
       <con:name>token_user</con:name>
-      <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxLHVzZXJAZW1haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpc3MiOiJjb20ubWljcm9jb21wYW55IiwiaWF0IjoxNzMxNDA1NTc2LCJleHAiOjE3MzE0OTE5NzZ9.nSpCVdl-ttxBZMRYnSV7u2eJJvQ9dhg14D5G7B85x2DNAIoTOPwZGLf7tQ4lr-2yiUzWRwU_EpcHcpH9tJ7t9g</con:value>
+      <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxLHVzZXJAZW1haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpc3MiOiJjb20ubWljcm9jb21wYW55IiwiaWF0IjoxNzMxNTczNDE4LCJleHAiOjE3MzE2NTk4MTh9.4qxnVKYzese5vJiALCKuQwEFNSxlGk-iOMMmPv4mQOqvWwmouVAFhJZ5o4Snw6aVPHCVWUa7TrCsxvnXNfWvtQ</con:value>
     </con:property>
   </con:properties>
   <con:reportParameters/>
