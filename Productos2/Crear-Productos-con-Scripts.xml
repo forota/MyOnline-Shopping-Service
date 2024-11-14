@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="f20702e9-a877-4b6c-936b-44d510f0785c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Crear Productos con Scripts" searchProperties="true" timeout="0">
+  <con:settings id="674acd71-51f5-4969-8a61-5558630767f0">
+    <con:setting id="de38ad36-bec4-451c-a194-59b2074e68fffileName">Crear-Productos-con-Scripts</con:setting>
+    <con:setting id="f20702e9-a877-4b6c-936b-44d510f0785cfileName">Crear-Productos-con-Scripts</con:setting>
+  </con:settings>
+  <con:testStep type="calltestcase" name="ejecutar Login Admin" id="17f95195-29eb-473c-bfe5-6c8b693f0307">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RunTestCaseStep">
+      <con:targetTestCase>50474382-ca05-46c3-95fe-842e3214ec71</con:targetTestCase>
+      <con:properties>
+        <con:property>
+          <con:name>token_admin</con:name>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyLGFkbWluQGVtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlzcyI6ImNvbS5taWNyb2NvbXBhbnkiLCJpYXQiOjE3MzE0MDY1MzEsImV4cCI6MTczMTQ5MjkzMX0.HLYdiUXtuodXCPezA0UFFvJAEXnPH2oss5eWcEwVVDGNUGa62TAci6Oi8UyqCG_45HMvDnXOpwrn-wG6aIl5Rg</con:value>
+        </con:property>
+      </con:properties>
+      <con:returnProperties>
+        <con:entry>token_admin</con:entry>
+      </con:returnProperties>
+      <con:runMode>PARALLELL</con:runMode>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Crear producto" id="c0d7bf06-b6ad-4b2b-8106-6d84c3b6c24d">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Products Management API" resourcePath="/products" methodName="create" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Crear producto" id="39b8d64a-0d9a-44bc-8f74-36ae92c39f26" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer ${ejecutar Login Admin#token_admin}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:9090</con:endpoint>
+        <con:request>{\r
+  "name" : "escoba",\r
+  "serial" : "123-123-4566"\r
+}</con:request>
+        <con:originalUri>http://localhost/products</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="2cb797fc-978c-4530-b3e3-2257e6e6d2ec" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>201</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="22afc7b2-dc18-4bb9-b050-2f4e0f36cfb7" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a11641ba-d202-4e32-a475-a1391ba44fb7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="a11641ba-d202-4e32-a475-a1391ba44fb7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>
