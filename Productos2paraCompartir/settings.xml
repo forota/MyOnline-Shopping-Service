@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="70e799ca-ed8a-42c8-abe6-ec0cfd7d013d" name="Productos2paraCompartir">
+  <con:settings id="6484fe1c-bdee-4822-8c5b-3431d53bfa18">
+    <con:setting id="44ea909c-044a-464f-b08d-869048c1c0d2fileName">Productos</con:setting>
+    <con:setting id="e836dc0c-256d-472d-9119-e7b535c2439efileName">Productos2</con:setting>
+    <con:setting id="70e799ca-ed8a-42c8-abe6-ec0cfd7d013dfileName">Productos2paraCompartir</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="a11641ba-d202-4e32-a475-a1391ba44fb7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>
