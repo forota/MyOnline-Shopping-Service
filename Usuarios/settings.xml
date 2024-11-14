@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="66aae5ef-d149-43d1-8f33-d0cd79d21f1d" name="Usuarios">
+  <con:settings id="165c1664-145a-4395-af36-4724e1e320c3">
+    <con:setting id="66aae5ef-d149-43d1-8f33-d0cd79d21f1dfileName">Usuarios</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
