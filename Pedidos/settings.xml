@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="8b42ce10-d9c4-463e-b466-f1ac36fb6f34" name="Pedidos">
+  <con:settings id="69173de3-0488-4b2b-b287-b415324fba76">
+    <con:setting id="8b42ce10-d9c4-463e-b466-f1ac36fb6f34fileName">Pedidos</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
